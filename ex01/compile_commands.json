@@ -1,0 +1,32 @@
+[
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "main.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c main.cpp -o main.o"
+  },
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "Animal.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c Animal.cpp -o Animal.o"
+  },
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "Dog.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c Dog.cpp -o Dog.o"
+  },
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "Cat.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c Cat.cpp -o Cat.o"
+  },
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "WrongAnimal.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c WrongAnimal.cpp -o WrongAnimal.o"
+  },
+  {
+    "directory": "/Users/lpassera/Desktop/cpp-module-04/ex01",
+    "file": "WrongCat.cpp",
+    "command": "c++ -std=c++98 -pedantic -Wall -Werror -Wextra -c WrongCat.cpp -o WrongCat.o"
+  }
+]
