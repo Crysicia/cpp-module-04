@@ -29,6 +29,21 @@ int main(void) {
 	delete doge_copy;
 	delete doge;
 
+	std::cout << std::endl << "---- Initialize Cats ----" << std::endl;
+	const Cat* kat = new Cat();
+	Cat kat_ref;
+
+	std::cout << std::endl << "---- Copy Cat ----" << std::endl;
+	const Cat* kat_copy = new Cat(*kat);
+
+	std::cout << std::endl << "---- Assign copy Cat ----" << std::endl;
+	Cat kat_ref_assigned;
+	kat_ref_assigned = kat_ref;
+
+	std::cout << std::endl << "---- Delete Cat and copies ----" << std::endl;
+	delete kat_copy;
+	delete kat;
+
 	std::cout << std::endl << "---- Call getType() on Animals ----" << std::endl;
 	std::cout << animal->getType() << " " << std::endl;
 	std::cout << dog->getType() << " " << std::endl;
