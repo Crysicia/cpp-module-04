@@ -14,15 +14,16 @@ int main(void) {
 	const WrongAnimal* wrong_animal = new WrongAnimal();
 	const WrongAnimal* wrong_cat = new WrongCat();
 
-	std::cout << std::endl << "---- Initialize Dog ----" << std::endl;
+	std::cout << std::endl << "---- Initialize Dogs ----" << std::endl;
 	const Dog* doge = new Dog();
+	Dog doge_ref;
 
 	std::cout << std::endl << "---- Copy Dog ----" << std::endl;
 	const Dog* doge_copy = new Dog(*doge);
 
 	std::cout << std::endl << "---- Assign copy Dog ----" << std::endl;
-	const Dog& doge_copy_assigned = Dog();
-	doge_copy_assigned = *doge;
+	Dog doge_ref_assigned;
+	doge_ref_assigned = doge_ref;
 
 	std::cout << std::endl << "---- Delete Dog and copies ----" << std::endl;
 	delete doge_copy;
@@ -55,5 +56,6 @@ int main(void) {
 	delete wrong_animal;
 	delete wrong_cat;
 
+	std::cout << std::endl << "---- Delete Animals on the stack ----" << std::endl;
 	return 0;
 }

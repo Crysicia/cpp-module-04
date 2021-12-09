@@ -16,6 +16,7 @@ WrongAnimal::~WrongAnimal() {
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& rhs) {
 	std::cout << "WrongAnimal copy operator called" << std::endl;
+	if ( this == &rhs ) { return *this; }
 	type = rhs.type;
 	return *this;
 }
