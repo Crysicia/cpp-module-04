@@ -1,9 +1,14 @@
 CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
-NAME	= minimal_makefile.out
+NAME	= animal.out
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f
-SRCS	= main.cpp
+SRCS	= main.cpp \
+		  Animal.cpp \
+		  Dog.cpp \
+		  Cat.cpp \
+		  WrongAnimal.cpp \
+		  WrongCat.cpp
 
 all: $(NAME)
 
