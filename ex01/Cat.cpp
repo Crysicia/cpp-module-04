@@ -21,6 +21,7 @@ Cat::~Cat() {
 Cat& Cat::operator=(const Cat& rhs) {
 	std::cout << "Cat copy operator called" << std::endl;
 	if ( this == &rhs ) { return *this; }
+	delete brain;
 	type = rhs.type;
 	brain = new Brain(*rhs.brain);
 	return *this;
