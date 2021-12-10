@@ -6,7 +6,7 @@
 
 int main(void) {
 	std::cout << "---- Initialize Animals ----" << std::endl;
-	const Animal* animal = new Animal();
+	// const Animal* animal = new Animal();
 	const Animal* dog = new Dog();
 	const Animal* cat = new Cat();
 
@@ -45,7 +45,7 @@ int main(void) {
 	delete kat;
 
 	std::cout << std::endl << "---- Call getType() on Animals ----" << std::endl;
-	std::cout << animal->getType() << " " << std::endl;
+	// std::cout << animal->getType() << " " << std::endl;
 	std::cout << dog->getType() << " " << std::endl;
 	std::cout << cat->getType() << " " << std::endl;
 
@@ -54,7 +54,7 @@ int main(void) {
 	std::cout << wrong_cat->getType() << " " << std::endl;
 
 	std::cout << std::endl << "---- Call makeSound() on Animals ----" << std::endl;
-	animal->makeSound();
+	// animal->makeSound();
 	dog->makeSound();
 	cat->makeSound();
 
@@ -63,7 +63,7 @@ int main(void) {
 	wrong_cat->makeSound();
 
 	std::cout << std::endl << "---- Delete Animals ----" << std::endl;
-	delete animal;
+	// delete animal;
 	delete dog;
 	delete cat;
 
