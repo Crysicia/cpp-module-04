@@ -1,9 +1,16 @@
 CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
-NAME	= minimal_makefile.out
+NAME	= amateria.out
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f
-SRCS	= main.cpp
+SRCS	= main.cpp \
+		  AMateria.cpp \
+		  Character.cpp \
+		  Cure.cpp \
+		  Ice.cpp \
+		  ICharacter.cpp \
+		  IMateriaSource.cpp \
+		  MateriaSource.cpp
 
 all: $(NAME)
 
