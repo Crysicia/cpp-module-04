@@ -57,6 +57,7 @@ void Character::equip(AMateria* materia) {
 	for (int i = 0; i < INVENTORY_CAPACITY; i++) {
 		if (!m_inventory[i]) {
 			m_inventory[i] = materia;
+			return ;
 		}
 	}
 }
