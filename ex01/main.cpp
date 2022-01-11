@@ -44,6 +44,26 @@ int main(void) {
 	delete kat_copy;
 	delete kat;
 
+	std::cout << std::endl << "---- Create Animals array ----" << std::endl;
+	const int ANIMALS_COUNT = 10;
+	Animal* array[ANIMALS_COUNT];
+
+	for (int i = 0; i < ANIMALS_COUNT; i++) {
+		if (i < ANIMALS_COUNT / 2) { array[i] = new Cat; }
+		else { array[i] = new Dog; }
+	}
+
+	std::cout << std::endl << "---- Call getType() on Animals array ----" << std::endl;
+	for (int i = 0; i < ANIMALS_COUNT; i++) {
+		std::cout << array[i]->getType() << std::endl;
+	}
+
+	std::cout << std::endl << "---- Call makeSound() on Animals array ----" << std::endl;
+	for (int i = 0; i < ANIMALS_COUNT; i++) {
+		array[i]->makeSound();
+	}
+
+
 	std::cout << std::endl << "---- Call getType() on Animals ----" << std::endl;
 	std::cout << animal->getType() << " " << std::endl;
 	std::cout << dog->getType() << " " << std::endl;
@@ -71,6 +91,11 @@ int main(void) {
 	delete wrong_animal;
 	delete wrong_cat;
 
+	std::cout << std::endl << "---- Delete Animals array ----" << std::endl;
+	for (int i = 0; i < ANIMALS_COUNT; i++) {
+		delete array[i];
+	}
+	
 	std::cout << std::endl << "---- Delete Animals on the stack ----" << std::endl;
 	return 0;
 }
