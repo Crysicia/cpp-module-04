@@ -17,12 +17,6 @@ Character::Character(std::string const& name) : m_name(name) {
 Character::Character(const Character& copy) {
 	std::cout << "Character copy constructor called" << std::endl;
 	*this = copy;
-	this->m_name = copy.m_name;
-	for (int i = 0; i < INVENTORY_CAPACITY; i++) {
-		if (copy.m_inventory[i]) {
-			m_inventory[i] = copy.m_inventory[i]->clone();
-		}
-	}
 }
 
 Character::~Character() {

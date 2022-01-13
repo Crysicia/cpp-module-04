@@ -10,11 +10,6 @@ MateriaSource::MateriaSource() {
 MateriaSource::MateriaSource(const MateriaSource& copy) {
 	std::cout << "MateriaSource copy constructor called" << std::endl;
 	*this = copy;
-	for (int i = 0; i < SOURCES_COUNT; i++) {
-		if (copy.m_sources[i]) {
-			m_sources[i] = copy.m_sources[i]->clone();
-		}
-	}
 }
 
 MateriaSource::~MateriaSource() {

@@ -33,6 +33,10 @@ int main(void) {
 	std::cout << std::endl << "---- Call createMateria() on MateriaSource ----" << std::endl;
 	tmp = src->createMateria("cure");
 
+	std::cout << std::endl << "---- Call createMateria() on unknown MateriaSource ----" << std::endl;
+	AMateria* unknown;
+	unknown = src->createMateria("unknown");
+
 	std::cout << std::endl << "---- Call equip() on Character ----" << std::endl;
 	me->equip(tmp);
 
